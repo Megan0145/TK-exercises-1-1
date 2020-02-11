@@ -31,7 +31,7 @@ def quit_game(wins, ties, losses):
     text_file = open("history.txt", "w")
     text_file.write(str(wins) + "," + str(ties) + "," + str(losses))
     text_file.close()
-
+    show_historical_data_message()
 
 def compare_choices_and_get_result(user, computer):
     if user == computer:
