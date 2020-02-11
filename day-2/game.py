@@ -7,7 +7,7 @@ def show_welcome_message():
 
 
 def get_historical_data():
-    text_file = open("history.txt", "r")
+    text_file = open("day-2/history.txt", "r")
     text_data = text_file.read().split(",")
     text_file.close()
     return {
@@ -28,7 +28,7 @@ def get_user_choice():
 
 
 def quit_game(wins, ties, losses):
-    text_file = open("history.txt", "w")
+    text_file = open("day-2/history.txt", "w")
     text_file.write(str(wins) + "," + str(ties) + "," + str(losses))
     text_file.close()
     show_historical_data_message()
@@ -102,3 +102,6 @@ while user_choice != "quit":
     user_choice = get_user_choice()
 
 quit_game(score["wins"], score["ties"], score["losses"])    
+
+# Thought process behind revisions:
+# 
