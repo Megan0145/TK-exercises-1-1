@@ -90,10 +90,15 @@ user_choice = get_user_choice()
 while user_choice != "quit":
     computer_choice = choice_options[random.randint(1, 3)]
     result = compare_choices_and_get_result(user_choice, computer_choice)
+    print(f"\n******RESULTS******")
     display_result_message_and_update_score(result)
-    print(f"Computer choice: {computer_choice}")
     print(f"\nCurrent score:")
     show_historical_data_message()
+    print(f"\nPrevious round:")
+    print(f"Computer choice: {computer_choice}")
+    print(f"Your choice: {user_choice}")
+    print(f"******************\n")
+    print(f"Enter a number please:")
     user_choice = get_user_choice()
 
 quit_game(score["wins"], score["ties"], score["losses"])    
