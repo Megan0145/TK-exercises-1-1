@@ -1,0 +1,29 @@
+Data types:
+
+welcome_message - string
+historical_data_message - string
+quit_message - string
+win_message - string
+loss_message - string
+tie_message - string
+
+historical data will be stored in seperate file, displaying an int for each number of wins, ties or losses
+
+wins, ties & losses will be stored in a dictionary, with an int for each number of wins, ties or losses that is loaded from the historical data file
+
+choice options will be stored in a dictionary
+
+procedures:
+1. display welcome message: displays when function invoked
+    eg function: def display_welcome_message()
+                 ....
+
+
+2. load historical_data and populate variables with data: 
+    eg function: def get_historical_data()
+                 (reads data from historical data file and populates wins, ties and losss variables)
+                 ...
+                
+3. display historical_data_message with historical data: displays when function invoked
+    eg function: def display_historical_data_message()
+                 ....
