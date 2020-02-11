@@ -14,7 +14,7 @@ wins, ties & losses will be stored in a dictionary, with an int for each number 
 choice options will be stored in a dictionary
 
 procedures:
-1. display welcome message: displays when function invoked
+1. display welcome message: displays value of welcome_message variable when function invoked
     eg function: def display_welcome_message()
                  ....
 
@@ -24,6 +24,43 @@ procedures:
                  (reads data from historical data file and populates wins, ties and losss variables)
                  ...
                 
-3. display historical_data_message with historical data: displays when function invoked
+3. display historical_data_message with historical data: displays value of historical_data_message variable (subsituting values of wins, ties and losses variables where appropriate) when function invoked
     eg function: def display_historical_data_message()
                  ....
+
+4. prompt user to make a choice between rock, paper, scissors, or quit
+    eg function: def get_choice()
+                ... prompts user to input choice from command line (rock, paper or scissors)
+
+    # 4.1. if quit, update text file with current wins, ties, losses data and exit game
+    eg function: def quit_game()
+                ... set variables in historical data file to contain the current score
+
+5. computer makes a choice between rock, paper, and scissors
+    eg function: def get_computer_choice()
+                ... return random int between 1 & 3 (corresponds to rock, paper and scissors in the choice options variable)   
+
+6. compare user choice and computer choice
+    eg function: def compare_choices()
+                ... takes the value of the choice option the user has chosen and the computer has chosen as input
+                    -> if they are equal, return tie 
+                    -> if user has chosen rock and computer has chosen scissors   
+                       OR
+                       if user has chosen scissors and computer has chosen paper
+                       OR
+                       if user has chosen paper and computer has chosen rock 
+                       return win 
+                    -> else return loss                     
+
+7. display message based on result of comparison & 8. update wins, ties, and losses
+    eg function: def display_result_and_update_score():
+                take in result of invoking compare_choices function
+                -> if result = tie 
+                    display tie message
+                    increment ties variable by 1
+                -> if result = win 
+                    display win message
+                    increment wins variable by 1
+                -> else 
+                    print loss message
+                    increment losses variable by 1
