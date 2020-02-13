@@ -1,0 +1,13 @@
+Objective challenge:
+What is an example of two classes that would be related through composition?
+What is an example of two classes that would be related through aggregation?
+
+
+As far as I can see, the term composition in OOP is used to describe two objects that have a 'has-a' relationship.
+The objects must be quite strongly linked in order for it to be deemed composition - if one of the objects in the relationship ceases to exist, so does the other.
+
+    Eg -> A person 'has-a' birthday date. If the person ceases to exist, so does their birthday and vice versa
+
+Aggregation refers to objects that have a slightly weaker link between eachother. If one ceases to exist, it does not mean that so will the other.
+
+    Eg -> A class can have many students, a student can be attending many classes. If one ceases to exist, this does not mean that so too will the other
