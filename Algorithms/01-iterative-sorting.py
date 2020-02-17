@@ -72,11 +72,6 @@ print(rec_binary)
 
 #1: What will the contents of the array below look like after each pass of the Selection Sort algorithm?
 
-[4, 67, 25, 33, 19, 40]
-[4, 19, 25, 33, 67, 40]
-[4, 19, 25, 33, 40, 67]
-[4, 19, 25, 33, 40, 67]
-
     ->  25 | 67 |  4 | 33 | 19 | 40
     ->   4 | 67 | 25 | 33 | 19 | 40
     ->   4 | 19 | 25 | 33 | 67 | 40
