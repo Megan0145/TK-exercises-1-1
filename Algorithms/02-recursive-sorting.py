@@ -6,9 +6,6 @@
 # binary search
 
 def bin_search(arr, target, l, r):
-    l = 0
-    r = len(arr) - 1
-
     # base case
     if r >= l :
 
@@ -33,6 +30,9 @@ def bin_search(arr, target, l, r):
     # else must not be present in array
     else:
         return False
+
+# first call to function: pass in l as 0 and r as len(array) - 1 so that range is entire array 
+bin_search(arr, target, 0, len(arr) - 1)
 
 #2.What would be the base case(s) we’d have to consider for implementing this function?
     -> The way I have implemented it above, using l and r variables corresponding to the 
