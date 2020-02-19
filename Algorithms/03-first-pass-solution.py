@@ -49,7 +49,10 @@ def foo(n):
   for i in range(0, sq_root): 
     print(i)
 
-# Linear: as the size of n increases, so too will the amount f times the loop runs: O(n)
+# Logarithmic: 
+# as the size of n increases, so too will the amount of times the loop runs, 
+# but only slightly as it it only prints sqrt(n) times 
+# O(log n)
 
 # 2
 def bar(x):
