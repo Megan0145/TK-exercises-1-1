@@ -56,9 +56,9 @@ def foo(n):
 
 # 2
 def bar(x):
-  sum = 0
+  sum = 0 # O(1)
   for i in range(0, 1463):
-    i += sum
+    i += sum # O(1)
     for j in range(0, x):
       for k in range(x, x + 15):
         sum += 1
