@@ -15,17 +15,17 @@ If you're working with bitwise operators x XOR y will be: x ^ y
        11011111
 NOR    00010111
 ---------------
-       00100000
+>       00100000
 
 # Q4: What is the result of 10101010 XOR 11110000?
 
        10101010
 XOR    11110000
 ---------------
-       01011010
+>       01011010
 
 # Q5: What is the result of 11011 AND 101?
        00011011
 AND    00000101
 ---------------
-       00000001
+>       00000001
