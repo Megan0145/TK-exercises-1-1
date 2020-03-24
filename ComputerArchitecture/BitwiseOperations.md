@@ -2,7 +2,7 @@
 
 # Q1: How would you perform an NOR operation between two numbers x and y if you didn’t have an NOR operator?How could you use the other bitwise operators to the same effect?
 
-Determine whether neither x or y is true and return the inverse of that result.
+Determine whether x or y is true and return the inverse of that result.
 If you're working with boolean values x NOR y will be: !(x || y)
 If you're working with bitwise operators x NOR y will be: ~(x | y)
 
