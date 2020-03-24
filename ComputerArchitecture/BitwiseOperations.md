@@ -9,7 +9,7 @@ If you're working with bitwise operators x NOR y will be: ~(x | y)
 # Q2: How would you perform an XOR operation between two numbers x and y if you didn’t have an XOR operator? How could you use the other bitwise operators to the same effect?
 
 Determine whether x or y is true but only return true if both of them aren't true (true if x is true or y is true but not both).
-If you're working with boolean values x XOR y will be: (x || y) && (x && y)
+If you're working with boolean values x XOR y will be: (x || y) && !(x && y)
 If you're working with bitwise operators x XOR y will be: x ^ y
 
 # Q3: What is the result of 11011111 NOR 00010111?
