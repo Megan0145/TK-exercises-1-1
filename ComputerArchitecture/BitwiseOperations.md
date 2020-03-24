@@ -1,3 +1,5 @@
+## Answers should be viewed raw - formatted funny
+
 # Q1: How would you perform an NOR operation between two numbers x and y if you didn’t have an NOR operator?How could you use the other bitwise operators to the same effect?
 
 Determine whether neither x or y is true and return the inverse of that result.
